@@ -14,6 +14,7 @@ function Navbar() {
     <nav>
       <Link to="/" className="brand">Job<b>Portal</b></Link>
       <NavLink to="/jobs">Jobs</NavLink>
+      <NavLink to="/ai-dashboard">AI dashboard</NavLink>
       {user?.role === "seeker" && <NavLink to="/saved-jobs">Saved</NavLink>}
       {user?.role === "employer" && <NavLink to="/dashboard">My postings</NavLink>}
 

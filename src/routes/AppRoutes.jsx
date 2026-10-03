@@ -8,6 +8,7 @@ import SavedJobs from "../pages/SavedJobs";
 import EmployerDashboard from "../pages/EmployerDashboard";
 import AddJob from "../pages/AddJob";
 import EditJob from "../pages/EditJob";
+import AIDashboard from "../pages/AIDashboard";
 import ProtectedRoute from "../components/ProtectedRoute";
 
 function AppRoutes() {
@@ -18,6 +19,7 @@ function AppRoutes() {
       <Route path="/signup" element={<Signup />} />
       <Route path="/jobs" element={<Jobs />} />
       <Route path="/jobs/:id" element={<JobDetails />} />
+      <Route path="/ai-dashboard" element={<AIDashboard />} />
 
       <Route
         path="/saved-jobs"

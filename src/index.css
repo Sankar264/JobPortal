@@ -51,7 +51,7 @@ h1 + .add-btn, h1 + a.add-btn { margin: 14px 0 22px; }
   border-radius: 14px; box-shadow: 5px 5px 0 var(--violet); animation: rise .5s both; }
 .stack-item:nth-child(2) { margin-left: 28px; box-shadow: 5px 5px 0 var(--gold); animation-delay: .1s; }
 .stack-item:nth-child(3) { margin-left: 8px; animation-delay: .2s; }
-.stack-item span { flex: 1; display: grid; }
+.stack-item > span:not(.mark) { flex: 1; display: grid; }
 .stack-item small { color: var(--muted); }
 .stack-item em { font-style: normal; font-weight: 700; background: var(--gold); padding: 3px 10px; border-radius: 999px; font-size: 14px; white-space: nowrap; }
 @keyframes rise { from { opacity: 0; transform: translateY(14px); } }
